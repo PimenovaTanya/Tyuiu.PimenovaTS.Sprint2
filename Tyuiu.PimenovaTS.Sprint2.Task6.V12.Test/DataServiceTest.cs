@@ -13,14 +13,14 @@ namespace Tyuiu.PimenovaTS.Sprint2.Task6.V12.Test
             DataService ds = new DataService();
 
             int g = 23;
-            int m = 9;
-            int n = 3;
+            int m = 1;
+            int n = 1;
 
-            double res = ds.FindDateOfPreviousDay(g, m, n);
-            string w = "2392";
+            string res = ds.FindDateOfPreviousDay(g, m, n);
+            string w = "31.12.22";
 
 
-            Assert.AreEqual(Convert.ToDouble(w), res);
+            Assert.AreEqual(Convert.ToString(w), res);
         }
     }
 }

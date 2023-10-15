@@ -25,7 +25,7 @@ namespace Tyuiu.PimenovaTS.Sprint2.Task6.V12
             Console.WriteLine("* Написать программу, которая использует сокращенную форму записи         *");
             Console.WriteLine("* оператора switch вычисляет требуемое значение и возвращает результат.   *");
             Console.WriteLine("* Условие: дата некоторого дня характеризуется тремя натуральными числами.*");
-            Console.WriteLine("* По заданным g, m, n определить дату следующего дня. Заданный год        *");
+            Console.WriteLine("* По заданным g, m, n определить дату предыдущего дня. Заданный год       *");
             Console.WriteLine("* является високосным.                                                    *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
@@ -41,7 +41,7 @@ namespace Tyuiu.PimenovaTS.Sprint2.Task6.V12
             Console.WriteLine("Введите значение N: ");
             n = Convert.ToInt32(Console.ReadLine());
 
-            double res = ds.FindDateOfPreviousDay(g, m, n);
+            string res = ds.FindDateOfPreviousDay(g, m, n);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
